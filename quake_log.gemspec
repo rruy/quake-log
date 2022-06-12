@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.description = 'A simple hello world gem'
   s.authors     = ['Ricardo Ruy']
   s.email       = 'ricardo.rruy@hotmail.com'
-  s.files       = ['lib/quake_log.rb']
+  s.files       = Dir['lib/*.rb', 'lib/log/*.rb']
   s.homepage    =
     'https://rubygems.org/gems/quake-log'
   s.license     = 'MIT'

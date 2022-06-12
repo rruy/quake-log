@@ -1,5 +1,7 @@
 class QuakeLog
-  def self.parser
-    puts 'Hello word!'
+  def self.process(args)
+    QuakeParser.process(args)
   end
 end
+
+require 'log/quake_parser'
