@@ -16,9 +16,18 @@ Done installing documentation for quake-log after 0 seconds
 
 You can acesse lib with command line IRB ruby
 
-- How to run parser
+- To run with console app 
 
-access IRB ruby
+access directory lib 
 
-$ require 'quake_log'
-$ QuakeLog.parser
+- To return specific game with reasons of killeds
+
+$ ruby lib/main.rb -g game_11 -k 
+
+- To return specific game infos
+
+$ ruby lib/main.rb -g game_11
+
+- To return all informations of games 
+
+$ ruby lib/main.rb 
