@@ -1,6 +1,6 @@
 # Game Quake Log Parse
 
-The project consist in implamentation for parse log the Game Quake. 
+The project consist in implementation for parse log the Game Quake. 
 Example line log register in file:
 ```
 21:42 Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
