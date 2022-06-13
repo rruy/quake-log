@@ -5,7 +5,7 @@ Example line log register in file:
 ```
 21:42 Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
 ```
-# Requirements
+## Requirements
 The project implemented a gem file for easy install and run parse log. 
 
 - Ruby 2.7
