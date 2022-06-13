@@ -5,20 +5,20 @@ Example line log register in file:
 ```
 21:42 Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
 ```
-# Requirement
+# Requirements
 The project implemented a gem file for easy install and run parse log. 
 
 - Ruby 2.7
 - Rspec - Lasted version
 
-## Instructions to install an run project
+## Instructions to install and run project
 
 #### Installation 
 You need run the commands lines above in your terminal
 ```
 $ gem build quake-log.gemspec
 ```
-After you execute build command the output should similar to:
+After you executed build the output should similar to:
 
 ```
 Successfully installed quake-log-0.0.1
@@ -31,11 +31,11 @@ For installation you need run the command
 ```
 gem install quake-log-0.0.1.gem
 ```
-Now you can use in your terminal via irb. 
+Now you can use lib in your terminal via irb. 
 
 #### Run parser direct in your terminal command 
 
-For return all information about games run command line
+For return all information about games run command line:
 ```
 $ ruby lib/main.rb
 ```
@@ -52,7 +52,7 @@ The result should similar to:
 }...
 ```
 
-For return specific game run command
+For return specific game run command:
 ```
 $ ruby lib/main.rb -g game_11
 ```
@@ -69,7 +69,7 @@ The result should similar to:
   }
 }...
 ```
-For return specific game with reasons of killeds
+For return specific game with reasons of killeds:
 ```
 $ ruby lib/main.rb -g game_11 -k
 ```
@@ -90,7 +90,7 @@ $ ruby lib/main.rb -g game_11 -k
 ```
 
 ### How to run units test
-Install rspec with command line
+Install rspec with command line:
 ```
 $ gem install rspec
 ```
