@@ -14,7 +14,7 @@ The project implemented a gem file for easy install and run parse log.
 ## Instructions to install and run project
 
 #### Installation 
-You need run the commands lines above in your terminal
+You need run the commands lines below in your terminal
 ```
 $ gem build quake-log.gemspec
 ```
@@ -98,7 +98,7 @@ For execute units tests run command line:
 ```
 $ cd spec/; rspec
 ```
-The result should simitar to example above:
+The result should simitar to example below:
 ```
 Finished in 0.00056 seconds (files took 0.03862 seconds to load)
 0 examples, 0 failures
