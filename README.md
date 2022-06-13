@@ -31,3 +31,14 @@ $ ruby lib/main.rb -g game_11
 - To return all informations of games 
 
 $ ruby lib/main.rb 
+
+
+- How to execute units tests
+
+Install rspec with command line
+
+$ gem install rspec
+
+To execute units teste run
+
+$ rspec 
