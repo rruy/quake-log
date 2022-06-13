@@ -5,7 +5,7 @@ gem build quake-log.gemspec
 
 - How to install gem
 
-gem install ./quake-log-0.0.1.gem
+gem install quake-log-0.0.1.gem
 
 After output messsage 
 
@@ -21,10 +21,4 @@ You can acesse lib with command line IRB ruby
 access IRB ruby
 
 $ require 'quake_log'
-
 $ QuakeLog.parser
-
-
-
-
-
