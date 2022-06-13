@@ -1,0 +1,35 @@
+require '../lib/log/quake_parser'
+
+describe QuakeParser do
+
+  describe "#process" do
+    it 'should return the correct number of games when not pass args for group by information' do
+      args = { kill_reason: ''}
+      parser = QuakeParser.new(args)
+      parser.process
+      expect(parser.games.length).to eq(21)
+    end
+
+    it 'should return the correct name of game select by parameter' do
+      args = { game_name: 'game_1'}
+      result = QuakeParser.new(args).process
+      expect(result.name).to eq(args[:game_name])
+    end
+
+    it 'should return the correct name of game and kill reasons when pass parameter game name and kill_reason' do 
+      args = { game_name: 'game_19', kill_reason: '' }
+      result = JSON.parse(QuakeParser.new(args).process)
+      
+      expect(result['game_19']).not_to be(nil)
+      expect(result['game_19']['kill_by_means'].size).to be > 0  
+    end
+
+    it 'should return game with kill_by_means when pass paramater to return kill reasons' do 
+      args = { game_name: 'game_19', kill_reason: 'MOD_ROCKET_SPLASH' }
+      result = JSON.parse(QuakeParser.new(args).process)
+
+      expect(result['game_19']).not_to be(nil)
+      expect(result['game_19']['kill_by_means'].size).to be > 0  
+    end
+  end
+end

@@ -7,7 +7,7 @@ class BuildParser
   class << self
     def process(args)
       args = parse_args(args)
-      QuakeLogParser.new(args).process
+      QuakeParser.new(args).process
     end
 
     private

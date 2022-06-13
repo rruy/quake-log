@@ -2,9 +2,8 @@
 
 require_relative 'file_helper'
 require_relative 'game'
-require 'pry'
 
-class QuakeLogParser
+class QuakeParser
   include FileHelper
 
   attr_reader :games, :options
@@ -81,7 +80,6 @@ class QuakeLogParser
     output = []
 
     @games.each { |game| output << game.killed_reasons }
-
     output
   end
 

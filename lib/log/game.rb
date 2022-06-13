@@ -49,18 +49,18 @@ class Game
       kill_reasons[kill.kill_reason] += 1
     end
 
-    { @name => { kills_by_means: kill_reasons } }
+    { @name => { kill_by_means: kill_reasons } }
   end
 
   def killed_reasons
     JSON.pretty_generate(kill_reasons_to_hash)
   end
 
-  private
-
   def find_player_by_name(name)
     @players.detect { |player| player.name == name }
   end
+
+  private
 
   def players_names
     players_in_game.map(&:name)
