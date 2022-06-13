@@ -1,6 +1,6 @@
 
 class QuakeParser
-  def self.process(args)
+  def process(args)
     puts args
   end
 end
