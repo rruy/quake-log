@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 require 'optparse'
-require 'quake_parser'
+require_relative 'quake_parser'
 
 class BuildParser
   class << self
     def process(args)
       args = parse_args(args)
-      QuakeParser.new(args).process
+      QuakeLogParser.new(args).process
     end
 
     private
@@ -28,7 +28,6 @@ class BuildParser
         end
 
         argument.separator 'Common options:'
-
         argument.on_tail('-h', '--help', 'Show this message.') do
           puts argument
           exit
